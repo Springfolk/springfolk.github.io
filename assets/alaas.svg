@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <title>Алаас</title>
+  <defs>
+    <clipPath id="disc"><circle cx="128" cy="128" r="118"/></clipPath>
+    <clipPath id="cone"><path d="M128 46 Q96 142 46 204 H210 Q160 142 128 46 Z"/></clipPath>
+  </defs>
+  <circle cx="128" cy="128" r="126" fill="#21160f"/>
+  <g clip-path="url(#disc)">
+    <rect width="256" height="256" fill="#3a82aa"/>
+    <path d="M0 120 Q128 104 256 120 V0 H0 Z" fill="#a8d0e2"/>
+    <path d="M0 196 Q128 180 256 196 V256 H0 Z" fill="#5f8f37"/>
+  </g>
+  <path d="M128 56 L110 22 M128 56 L146 22" stroke="#21160f" stroke-width="16" stroke-linecap="round"/>
+  <path d="M128 56 L110 22 M128 56 L146 22" stroke="#f3ead6" stroke-width="7" stroke-linecap="round"/>
+  <path d="M128 46 Q96 142 46 204 H210 Q160 142 128 46 Z" fill="#f3ead6"/>
+  <g clip-path="url(#cone)">
+    <rect y="96" width="256" height="7" fill="#21160f"/>
+    <rect y="128" width="256" height="30" fill="#21160f"/>
+    <path d="M40 152 L50 134 L60 152 L70 134 L80 152 L90 134 L100 152 L110 134 L120 152 L130 134 L140 152 L150 134 L160 152 L170 134 L180 152 L190 134 L200 152 L210 134 L220 152 Z" fill="#f3ead6"/>
+  </g>
+  <path d="M112 204 V182 Q112 170 128 170 Q144 170 144 182 V204 Z" fill="#21160f"/>
+  <path d="M128 46 Q96 142 46 204 H210 Q160 142 128 46 Z" fill="none" stroke="#21160f" stroke-width="9" stroke-linejoin="round"/>
+</svg>
