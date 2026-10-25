@@ -17,4 +17,4 @@
 
 ## Adding a project
 
-Public, non-commercial repos only (`gh repo view <repo> --json visibility`). Copy one `<li class="card">`, use a small icon (≤ 50 kB) with `alt=""` (the name is beside it), link "Play"/"Install" and "Source", and add its licence to the footer.
+Public, non-commercial repos only (`gh repo view <repo> --json visibility`). Copy one `<li class="card">`, use a small icon (≤ 50 kB) with `alt=""` (the name is beside it), link "Play"/"Install" and "Source", and add its licence to the footer. AI-made projects get `<span class="tag" lang="en" title="Made with <model>">AI-made</span>` in the `h2` and a mention in the footer's AI-made line.
