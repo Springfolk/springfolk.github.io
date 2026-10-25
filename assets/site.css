@@ -32,6 +32,8 @@
   --text: var(--soil);
   --muted: #555555;   /* soil + paper mix, 6.6:1 on paper */
   --line: #d4d4d4;    /* soil + paper mix, decorative only */
+  --card: #f7f7f7;
+  --bar: #e6e6e6;
   color-scheme: light dark;
 }
 @media (prefers-color-scheme: dark) {
@@ -40,6 +42,8 @@
     --text: var(--paper);
     --muted: #c4c4c4; /* 7.0:1 on soil */
     --line: #4f4f4f;
+    --card: #3a3a3a;
+    --bar: #444444;
   }
 }
 
@@ -60,7 +64,20 @@ header { padding: 3.5rem 0 2.5rem; }
 .logo img { display: block; height: 3.5rem; width: auto; }
 .lede { margin: 1rem 0 0; font-size: 1.25rem; font-weight: 600; }
 
-main { padding-bottom: 3rem; }
+/* one window: a thin titlebar with three lights, in the style of the Springfolk desktop (plain CSS, no copied code) */
+.window {
+  margin-bottom: 3rem; border: 1px solid var(--line); border-radius: 0.75rem; overflow: hidden;
+  background: var(--card); box-shadow: 0 1px 2px rgb(0 0 0 / 0.06), 0 8px 24px rgb(0 0 0 / 0.08);
+}
+.titlebar {
+  position: relative; padding: 0.4rem 0.75rem; text-align: center; font-size: 0.875rem; font-weight: 600; color: var(--muted);
+  background: var(--bar); border-bottom: 1px solid var(--line);
+}
+.dots { position: absolute; left: 0.75rem; top: 50%; translate: 0 -50%; display: flex; gap: 0.4rem; }
+.dots i { width: 0.7rem; height: 0.7rem; border-radius: 50%; background: #ff5f57; }
+.dots i:nth-child(2) { background: #febc2e; }
+.dots i:nth-child(3) { background: #28c840; }
+.window .projects { padding: 1rem; }
 .projects {
   list-style: none; margin: 0; padding: 0;
   display: grid; gap: 1rem;
