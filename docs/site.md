@@ -4,7 +4,7 @@
 |---|---|
 | `index.html` | header lockup, one-line lede, project cards, footer |
 | `404.html` | minimal not-found page (root-absolute paths) |
-| `assets/site.css` | all styles; light/dark via `prefers-color-scheme` |
+| `assets/site.css` | all styles; light/dark via `prefers-color-scheme`; bump `?v=` in both HTML links on every change (Pages caches CSS 10 min) |
 | `assets/brand/` | unedited copies of `full-logo{,-dark}.svg`, `glyph{,-dark}.svg` (favicon) from `Springfolk/branding` |
 | `assets/fonts/` | Nunito Sans variable woff2 (latin, cyrillic, cyrillic-ext for Sakha letters) + `OFL.txt` |
 | `assets/alaas.svg` | Алаас icon, copied from `alaas/docs/img/icon.svg` (replace with the redrawn one when it lands) |
