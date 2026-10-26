@@ -1,25 +1,16 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Page not found</title>
-  <link rel="icon" href="/assets/brand/glyph.svg" type="image/svg+xml" media="(prefers-color-scheme: light)">
-  <link rel="icon" href="/assets/brand/glyph-dark.svg" type="image/svg+xml" media="(prefers-color-scheme: dark)">
-  <link rel="stylesheet" href="/assets/site.css?v=2">
+<meta charset="utf-8">
+<title>Springfolk on GitHub</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+  // a missing page: under a project's path (/alaas-game/…) its repo, else the organisation
+  const p = location.pathname.split('/').filter(Boolean)[0];
+  location.replace('https://github.com/Springfolk' + (p && /^[\w.-]+$/.test(p) ? '/' + p : ''));
+</script>
 </head>
 <body>
-  <div class="wrap">
-    <header>
-      <a class="logo" href="/">
-        <picture>
-          <source srcset="/assets/brand/full-logo-dark.svg" media="(prefers-color-scheme: dark)">
-          <img src="/assets/brand/full-logo.svg" alt="Springfolk" width="195" height="56">
-        </picture>
-      </a>
-      <p class="lede">Page not found.</p>
-      <p><a href="/">Back to Springfolk's open-source projects</a></p>
-    </header>
-  </div>
+<p>Not found. Springfolk's open-source projects are on <a href="https://github.com/Springfolk">github.com/Springfolk</a>.</p>
 </body>
 </html>
